@@ -1,4 +1,11 @@
-syntax on
+" Settings for using Vundle with common vimrc and gvimrc
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-" Wrap gitcommit file types at the appropriate length
-filetype indent plugin on
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+let path='~/.vim/bundle'
+
+" Now we source our common vimrc
+source /Users/mhminai/Copy/20_Archive/MyVIM/_vimrc
+let $MYVIMRC= '/Users/mhminai/Copy/20_Archive/MyVIM/_vimrc'
